@@ -5,19 +5,33 @@
     <meta charset="utf-8">
     <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
     <title>ohmyfood</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <script src="https://kit.fontawesome.com/1b67ca9c39.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Header -->
     <header>
-        <img src="assets/Images/Logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
+        <div class="header">
+            <img src="assets/Images/Logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
+        </div>
+        <div class="location">
+            <i class="fa-sharp fa-solid fa-location-dot"></i>
+            <input class="input__location" type="search" name="city" value="Paris, Belleville"
+                placeholder="Votre ville">
+        </div>
     </header>
     <main>
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, sélectionné par nos soins.</p>
-        <button>Explorez nos restaurants</button>
+        <!-- Section about -->
+        <div class="about">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, sélectionné par nos soins.</p>
+            <button class="btn__about">Explorez nos restaurants</button>
+        </div>
         <section>
             <!-- Section how to -->
         </section>
