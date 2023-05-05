@@ -13,26 +13,34 @@
 </head>
 
 <body>
+
     <!-- Header -->
+
     <header>
         <div class="header">
             <img src="assets/Images/Logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
         </div>
         <div class="location">
-            <i class="fa-sharp fa-solid fa-location-dot"></i>
+            <div class="location_icon">
+                <i class="fa-sharp fa-solid fa-location-dot location_icon"></i>
+            </div>
             <input class="input__location" type="search" name="city" value="Paris, Belleville"
                 placeholder="Votre ville">
         </div>
     </header>
     <main>
+
         <!-- Section about -->
+
         <div class="about">
             <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, sélectionné par nos soins.</p>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             <button class="btn__about">Explorer nos restaurants</button>
         </div>
-        <section>
-            <!-- Section how to -->
+
+        <!-- Section how to -->
+
+        <section class="main_container_how">
             <h2>Fonctionnement</h2>
             <ul class="container_how">
                 <li class="how_btn">
@@ -52,46 +60,57 @@
                 </li>
             </ul>
         </section>
-        <section>
-            <!-- Section restaurants -->
+
+        <!-- Section restaurants -->
+
+        <section class="container_restaurants">
             <h2>Restaurants</h2>
-            <div class="container_restaurants">
+            <div class="container__restaurants__cards">
+                <article class="restaurant_card">
+                    <a href="">
+                        <span class="tag">Nouveau</span>
+                        <img src="./assets/Images/Restaurants/menu-palette-gout.png" alt="palette du gout à changer">
+                        <div class="card__content">
+
+                            <h3 class="h3">La palette du goût
+                                <i class="fa-regular fa-heart"></i>
+                            </h3>
+                            <p>Ménilmontant</p>
+                        </div>
+                    </a>
+                </article>
                 <article class="restaurant_card">
                     <a href="#test">
                         <span class="tag">Nouveau</span>
-                        <img src="./assets/Images/Restaurants/palette-du-gout.svg" alt="palette du gout à changer">
-                        <h3 class="h3">La palette du goût
-                            <i class="fa-regular fa-heart"></i>
-                        </h3>
-                        <p>Ménilmontant</p>
+                        <img src="./assets/Images/Restaurants/menu-note-enchantee.png" alt="palette du gout à changer">
+                        <div class="card__content">
+                            <h3 class="h3">La note enchantée
+                                <i class="fa-regular fa-heart"></i>
+                            </h3>
+                            <p>Charonne</p>
+                        </div>
                     </a>
                 </article>
                 <article class="restaurant_card">
                     <a href="#test">
-                        <span class="tag">Nouveau</span>
-                        <img src="./assets/Images/Restaurants/note-enchantee.svg" alt="palette du gout à changer">
-                        <h3 class="h3">La note enchantée
-                            <i class="fa-regular fa-heart"></i>
-                        </h3>
-                        <p>Charonne</p>
+                        <img src="./assets/Images/Restaurants/menu-francaise.png" alt="palette du gout à changer">
+                        <div class="card__content">
+                            <h3 class="h3">A la française
+                                <i class="fa-regular fa-heart"></i>
+                            </h3>
+                            <p>Cité-rouge</p>
+                        </div>
                     </a>
                 </article>
                 <article class="restaurant_card">
                     <a href="#test">
-                        <img src="./assets/Images/Restaurants/A-la-francaise.svg" alt="palette du gout à changer">
-                        <h3 class="h3">A la française
-                            <i class="fa-regular fa-heart"></i>
-                        </h3>
-                        <p>Cité-rouge</p>
-                    </a>
-                </article>
-                <article class="restaurant_card">
-                    <a href="#test">
-                        <img src="./assets/Images/Restaurants/Delice-sens.svg" alt="palette du gout à changer">
-                        <h3 class="h3">Le délice des sens
-                            <i class="fa-regular fa-heart"></i>
-                        </h3>
-                        <p>Folie-Méricourt</p>
+                        <img src="./assets/Images/Restaurants/menu-delice-sens.png" alt="palette du gout à changer">
+                        <div class="card__content">
+                            <h3 class="h3">Le délice des sens
+                                <i class="fa-regular fa-heart"></i>
+                            </h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
                     </a>
                 </article>
             </div>
@@ -100,10 +119,10 @@
     <footer>
         <img src="./assets/Images/Logo/ohmyfood_footer.png" alt="logo Ohmyfood">
         <ul>
-            <li>
+            <li><i class="fa-solid fa-utensils" style="color: #ffffff;"></i>
                 Proposer un restaurant
             </li>
-            <li>
+            <li><i class="fa-solid fa-handshake-angle" style="color: #ffffff;"></i>
                 Devenir partenaire
             </li>
             <li>

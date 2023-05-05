@@ -1,4 +1,8 @@
 .location {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
     height: 50px;
     text-align: center;
     background-color: #EAEAEA;
@@ -11,4 +15,9 @@
     padding-bottom: 15.5px;
     background-color: #EAEAEA;
     text-align: center;
+}
+
+.location_icon {
+    display: flex;
+    align-items: center;
 }

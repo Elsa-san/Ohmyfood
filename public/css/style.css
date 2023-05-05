@@ -1,5 +1,5 @@
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Shrikhand", sans-serif;
   font-size: 24px;
   text-align: center;
 }
@@ -10,7 +10,7 @@ body {
 
 h2 {
   padding-left: 20px;
-  margin-top: 48px;
+  margin-top: 30px;
 }
 
 h3 {
@@ -38,7 +38,8 @@ a {
   color: #000000;
 }
 
-h3 {
+h3,
+h4 {
   margin: 0;
 }
 
@@ -63,6 +64,9 @@ figure {
 }
 
 .location {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   height: 50px;
   text-align: center;
   background-color: #EAEAEA;
@@ -77,21 +81,28 @@ figure {
   text-align: center;
 }
 
+.location_icon {
+  display: flex;
+  align-items: center;
+}
+
 .how_btn {
   background-color: #F6F6F6;
   border-radius: 20px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  margin: 20px 20px 0 32px;
   height: 72px;
   align-items: center;
-  width: 322px;
   display: flex;
+  width: 100%;
 }
-
+@media screen and (min-width: 1024px) {
+  .how_btn {
+    max-width: 322px;
+  }
+}
 footer {
   background-color: black;
   height: 186px;
-  margin-top: 30px;
 }
 
 footer li {
@@ -106,19 +117,39 @@ footer img {
   margin-top: 22px;
 }
 
+@media screen and (min-width: 1024px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .header {
   text-align: center;
   vertical-align: middle;
   height: 63px;
   padding-top: 14px;
-  padding-bottom: 5px;
   box-sizing: border-box;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
+.arrow {
+  position: absolute;
+  left: 15px;
+}
+
+main img {
+  object-fit: cover;
+  width: 100%;
+  height: 350px;
+}
 .how i {
   color: #7E7E7E;
   margin-right: 27px;
+}
+
+.how :hover {
+  color: #9356DC;
 }
 
 .step_number {
@@ -137,8 +168,68 @@ footer img {
 
 .container_how {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 25px;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .container_how {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    gap: 35px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container_how {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    gap: 35px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main_container_how {
+    width: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main_container_how {
+    min-height: 200px;
+    padding-top: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main_container_how {
+    max-width: 1075px;
+  }
+}
+
+.container_restaurants {
+  background-color: #F6F6F6;
+  margin-top: 40px;
+  padding-top: 5px;
+  padding-bottom: 40px;
+}
+
+.container__restaurants__cards {
+  display: flex;
+  flex-direction: column;
+  max-width: 1075px;
+}
+@media screen and (min-width: 1024px) {
+  .container__restaurants__cards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container__restaurants__cards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
 }
 
 .restaurant_card {
@@ -146,32 +237,44 @@ footer img {
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   margin: 15px;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant_card {
+    max-width: 490px;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .restaurant_card {
+    max-width: 490px;
+    height: 250px;
+  }
 }
 
 .restaurant_card img {
   object-fit: cover;
+  height: 170px;
+  width: 100%;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
 
 .restaurant_card h3 {
-  margin-top: 16px;
+  font-size: 18px;
   margin-left: 13px;
   margin-bottom: 5px;
+  padding-top: 13px;
   margin-right: 33px;
   display: flex;
   justify-content: space-between;
 }
 
 .restaurant_card p {
-  margin-left: 13px;
   font-weight: 100;
+  margin-left: 13px;
   margin-top: 0;
-}
-
-.container_restaurants {
-  display: flex;
-  flex-wrap: wrap;
+  margin-bottom: 0;
 }
 
 .tag {
@@ -189,6 +292,10 @@ footer img {
   right: 10%;
 }
 
+.card__content {
+  height: 77px;
+}
+
 .about {
   text-align: center;
   background-color: #F6F6F6;
@@ -199,6 +306,114 @@ footer img {
   font-weight: 300;
   margin-left: 34px;
   margin-right: 26px;
+}
+
+.main__menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  position: relative;
+  margin-top: -40px;
+}
+@media screen and (min-width: 1024px) {
+  .main__menu {
+    width: 1055px;
+    align-items: center;
+  }
+}
+.main__menu h1 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 40px;
+  padding-top: 32px;
+  font-family: "Shrikhand";
+  size: 28px;
+}
+
+.menu__card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  height: 69px;
+  margin-left: 13px;
+  margin-right: 13px;
+  cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .menu__card {
+    width: 630px;
+  }
+}
+
+.menu__card p {
+  font-weight: 100;
+  margin-left: 13px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 100;
+}
+
+.menu__card h3 {
+  font-size: 18px;
+  margin-left: 13px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  padding-top: 12px;
+}
+
+.subtitle__line {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 16px;
+}
+
+.group__menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.group__menu h2 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.line {
+  width: 40px;
+  border: 2px solid #99E2D0;
+  margin-left: 20px;
+}
+
+.btn__order {
+  box-shadow: 0px 4px 10px;
+  border-radius: 25px;
+  background: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  border: none;
+  color: white;
+  cursor: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  height: 50px;
+  width: 186px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.order {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  i {
+    padding-left: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

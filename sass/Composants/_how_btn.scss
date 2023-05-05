@@ -1,0 +1,11 @@
+.how_btn {
+    @include how_btn_main;
+    display: flex;
+    width: 100%;
+
+    @include desktop {
+        max-width: 322px;
+    }
+
+    @include tablette
+}

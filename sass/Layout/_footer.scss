@@ -1,7 +1,6 @@
 footer {
     background-color: black;
     height: 186px;
-    margin-top: 30px;
 }
 
 footer li {
@@ -14,4 +13,11 @@ footer li {
 footer img {
     margin-left: 25px;
     margin-top: 22px;
+}
+
+footer ul {
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+    }
 }
