@@ -2,6 +2,8 @@
     @include how_btn_main;
     display: flex;
     width: 100%;
+    cursor: pointer;
+
 
     @include desktop {
         max-width: 322px;

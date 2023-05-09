@@ -6,13 +6,15 @@
     border-top-right-radius: 25px;
     position: relative;
     margin-top: -40px;
+    align-items: center;
 
     @include desktop {
         width: 1055px;
-        align-items: center;
+        margin: auto;
+        margin-top: -40px;
+
     }
 
-    @include large;
 }
 
 .main__menu h1 {
@@ -22,7 +24,7 @@
     margin-right: 40px;
     padding-top: 32px;
     font-family: "Shrikhand";
-    size: 28px;
+    font-size: 28px;
 }
 
 
@@ -42,6 +44,7 @@ main img {
 
     @include desktop {
         width: 630px;
+        margin: auto;
     }
 }
 
@@ -66,8 +69,14 @@ main img {
 
 .group__menu {
     display: flex;
+    width: 100%;
     flex-direction: column;
     row-gap: 15px;
+
+    @include desktop {
+        max-width: 630px;
+        margin: auto;
+    }
 
 }
 
@@ -75,12 +84,20 @@ main img {
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 0;
+
+    @include desktop {
+        padding-left: 0;
+    }
 }
 
 .line {
     width: 40px;
     border: 2px solid $color-tertiary;
     margin-left: 20px;
+
+    @include desktop {
+        margin-left: 0;
+    }
 }
 
 .btn__order {
@@ -97,8 +114,10 @@ main img {
     align-items: center;
 }
 
-i {
+.main__menu i {
+    padding-left: 10px;
+
     @include desktop {
-        padding-left: 10px;
+        padding-left: 24px;
     }
 }

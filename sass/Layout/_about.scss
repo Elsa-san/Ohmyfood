@@ -3,10 +3,24 @@
     background-color: #F6F6F6;
     padding: 39.5px 0;
 
-}
+    @include desktop {
+        padding: 30px;
+        font-size: 18px;
+        font-weight: 300;
 
-.about p {
-    font-weight: 300;
-    margin-left: 34px;
-    margin-right: 26px;
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    p {
+        font-weight: 300;
+        margin-left: 26px;
+        margin-right: 26px;
+
+        @include desktop {
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+    }
 }

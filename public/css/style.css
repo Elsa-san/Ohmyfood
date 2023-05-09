@@ -53,14 +53,17 @@ figure {
   background: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   border: none;
   color: white;
-  cursor: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   font-size: 16px;
   height: 50px;
+  cursor: pointer;
+  transition-duration: 0.4s;
   width: 218px;
 }
 .btn__about:hover {
+  box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.35);
   background-color: #ae80e5;
+  background-blend-mode: lighten;
 }
 
 .location {
@@ -94,6 +97,7 @@ figure {
   align-items: center;
   display: flex;
   width: 100%;
+  cursor: pointer;
 }
 @media screen and (min-width: 1024px) {
   .how_btn {
@@ -104,38 +108,67 @@ footer {
   background-color: black;
   height: 186px;
 }
-
-footer li {
+@media screen and (min-width: 1024px) {
+  footer {
+    height: 114px;
+  }
+}
+footer img {
+  margin-left: 25px;
+  margin-top: 22px;
+}
+@media screen and (min-width: 1024px) {
+  footer img {
+    float: right;
+    margin-top: 64px;
+    margin-right: 26px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    padding-top: 64px;
+    margin-top: 0;
+    margin-left: 350px;
+  }
+}
+footer ul a {
   color: #fff;
   font-size: 16px;
   margin-bottom: 7px;
   margin-left: 25px;
 }
-
-footer img {
-  margin-left: 25px;
-  margin-top: 22px;
-}
-
-@media screen and (min-width: 1024px) {
-  footer ul {
-    display: flex;
-    flex-direction: row;
-  }
+footer ul li {
+  margin-bottom: 7px;
 }
 
 .header {
   text-align: center;
-  vertical-align: middle;
   height: 63px;
   padding-top: 14px;
   box-sizing: border-box;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 96px;
+    padding-top: 26px;
+  }
+}
+.header img {
+  cursor: pointer;
+}
 
 .arrow {
   position: absolute;
   left: 15px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .arrow {
+    margin-top: 10px;
+  }
 }
 
 main img {
@@ -143,6 +176,51 @@ main img {
   width: 100%;
   height: 350px;
 }
+.container_how {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .container_how {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    gap: 35px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container_how {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    gap: 35px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main_container_how {
+    width: 100%;
+  }
+  .main_container_how h2 {
+    max-width: 1080px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .main_container_how :last-child {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main_container_how {
+    min-height: 200px;
+    padding-top: 30px;
+  }
+}
+
 .how i {
   color: #7E7E7E;
   margin-right: 27px;
@@ -166,63 +244,35 @@ main img {
   right: 13px;
 }
 
-.container_how {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  margin-left: 30px;
-  margin-right: 20px;
-}
-@media screen and (min-width: 1024px) {
-  .container_how {
-    display: flex;
-    flex-direction: row;
-    margin-top: 25px;
-    gap: 35px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container_how {
-    display: flex;
-    flex-direction: row;
-    margin-top: 25px;
-    gap: 35px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .main_container_how {
-    width: auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  .main_container_how {
-    min-height: 200px;
-    padding-top: 30px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .main_container_how {
-    max-width: 1075px;
-  }
-}
-
 .container_restaurants {
   background-color: #F6F6F6;
   margin-top: 40px;
   padding-top: 5px;
   padding-bottom: 40px;
 }
+@media screen and (min-width: 1024px) {
+  .container_restaurants {
+    margin-top: 0;
+  }
+  .container_restaurants h2 {
+    max-width: 1080px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 .container__restaurants__cards {
   display: flex;
   flex-direction: column;
-  max-width: 1075px;
 }
 @media screen and (min-width: 1024px) {
   .container__restaurants__cards {
     display: grid;
     grid-template-columns: 50% 50%;
+    max-width: 1080px;
+    margin: 0 auto;
+    column-gap: 50px;
+    row-gap: 50px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -243,6 +293,7 @@ main img {
   .restaurant_card {
     max-width: 490px;
     height: 250px;
+    margin: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -301,11 +352,26 @@ main img {
   background-color: #F6F6F6;
   padding: 39.5px 0;
 }
-
+@media screen and (min-width: 1024px) {
+  .about {
+    padding: 30px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .about h1 {
+    font-size: 40px;
+  }
+}
 .about p {
   font-weight: 300;
-  margin-left: 34px;
+  margin-left: 26px;
   margin-right: 26px;
+}
+@media screen and (min-width: 1024px) {
+  .about p {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
 }
 
 .main__menu {
@@ -316,13 +382,16 @@ main img {
   border-top-right-radius: 25px;
   position: relative;
   margin-top: -40px;
+  align-items: center;
 }
 @media screen and (min-width: 1024px) {
   .main__menu {
     width: 1055px;
-    align-items: center;
+    margin: auto;
+    margin-top: -40px;
   }
 }
+
 .main__menu h1 {
   display: flex;
   justify-content: space-between;
@@ -330,7 +399,7 @@ main img {
   margin-right: 40px;
   padding-top: 32px;
   font-family: "Shrikhand";
-  size: 28px;
+  font-size: 28px;
 }
 
 .menu__card {
@@ -345,6 +414,7 @@ main img {
 @media screen and (min-width: 1024px) {
   .menu__card {
     width: 630px;
+    margin: auto;
   }
 }
 
@@ -372,8 +442,15 @@ main img {
 
 .group__menu {
   display: flex;
+  width: 100%;
   flex-direction: column;
   row-gap: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .group__menu {
+    max-width: 630px;
+    margin: auto;
+  }
 }
 
 .group__menu h2 {
@@ -381,11 +458,21 @@ main img {
   font-weight: 300;
   margin-bottom: 0;
 }
+@media screen and (min-width: 1024px) {
+  .group__menu h2 {
+    padding-left: 0;
+  }
+}
 
 .line {
   width: 40px;
   border: 2px solid #99E2D0;
   margin-left: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .line {
+    margin-left: 0;
+  }
 }
 
 .btn__order {
@@ -394,13 +481,19 @@ main img {
   background: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   border: none;
   color: white;
-  cursor: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   font-size: 16px;
   height: 50px;
+  cursor: pointer;
+  transition-duration: 0.4s;
   width: 186px;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+.btn__order:hover {
+  box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.35);
+  background-color: #ae80e5;
+  background-blend-mode: lighten;
 }
 
 .order {
@@ -410,9 +503,12 @@ main img {
   align-items: center;
 }
 
+.main__menu i {
+  padding-left: 10px;
+}
 @media screen and (min-width: 1024px) {
-  i {
-    padding-left: 10px;
+  .main__menu i {
+    padding-left: 24px;
   }
 }
 
