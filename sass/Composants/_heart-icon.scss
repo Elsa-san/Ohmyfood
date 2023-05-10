@@ -1,0 +1,32 @@
+  .heart__icon {
+      margin-left: 10px;
+
+      @include desktop {
+          margin-left: 24px;
+      }
+
+      &--empty {
+          position: absolute;
+      }
+
+      &--fill {
+          position: absolute;
+          opacity: 0;
+          background: linear-gradient(#FF79DA, #9356DC);
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          font-weight: bold;
+          cursor: pointer;
+      }
+
+      &:hover &--fill {
+          opacity: 1;
+          animation: fill 0.4s ease-in-out;
+
+      }
+
+      &:hover &--empty {
+          opacity: 0;
+      }
+  }

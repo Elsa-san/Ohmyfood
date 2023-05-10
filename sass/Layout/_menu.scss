@@ -68,16 +68,41 @@ main img {
 }
 
 .group__menu {
-    display: flex;
     width: 100%;
+    display: flex;
     flex-direction: column;
     row-gap: 15px;
+
 
     @include desktop {
         max-width: 630px;
         margin: auto;
     }
 
+    .starters {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        animation: fadein 3s ease-in-out;
+        pointer-events: none;
+
+    }
+
+    .dishes {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        animation: fadein 6s ease-in-out;
+        pointer-events: none;
+    }
+
+    .desserts {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        animation: fadein 8s ease-in-out;
+        pointer-events: none;
+    }
 }
 
 .group__menu h2 {

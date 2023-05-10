@@ -1,0 +1,22 @@
+.loader {
+    background: $color-tertiary;
+    width: 100%;
+    height: 100%;
+    font-size: x-large;
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    animation: loader 2s ease-in-out 2s forwards;
+}
+
+.loader__icon {
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: rotate 1s linear infinite;
+
+    i {
+        color: #003A68;
+    }
+}
