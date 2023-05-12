@@ -1,4 +1,4 @@
-.container_how {
+.container__how {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -22,7 +22,7 @@
 
 }
 
-.main_container_how {
+.main_container__how {
     @include desktop {
         width: 100%;
 
@@ -47,7 +47,7 @@
 
 }
 
-.how_icons {
+.how__icons {
     color: #7E7E7E;
     margin-right: 27px;
 }
@@ -57,7 +57,7 @@
     margin-right: 27px;
 }
 
-.step_number {
+.step__number {
     display: flex;
     align-items: center;
     justify-content: center;

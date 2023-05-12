@@ -19,12 +19,15 @@
 
 .main__menu h1 {
     display: flex;
+    margin-right: 35px;
     justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 40px;
     padding-top: 32px;
     font-family: "Shrikhand";
     font-size: 28px;
+
+    @include desktop {
+        margin-right: 35px;
+    }
 }
 
 
@@ -133,6 +136,7 @@ main img {
     position: absolute;
     transform-origin: 100% 50%;
     transform: scaleX(0);
+    transition-duration: 0.5s;
 
     & .icon-circle {
         color: #fff;
@@ -150,6 +154,18 @@ main img {
     margin-right: 13px;
     cursor: pointer;
     position: relative;
+
+    p,
+    h3 {
+        max-width: 290px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        @include desktop {
+            max-width: 500px;
+        }
+    }
 
     &:hover {
 
