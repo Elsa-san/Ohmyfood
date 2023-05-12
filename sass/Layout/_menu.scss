@@ -172,6 +172,10 @@ main img {
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+
+            @include desktop {
+                max-width: 500px;
+            }
         }
 
     }

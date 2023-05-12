@@ -215,11 +215,13 @@ footer ul li {
   padding-top: 14px;
   box-sizing: border-box;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
 }
 @media screen and (min-width: 1024px) {
   .header {
     height: 96px;
     padding-top: 26px;
+    box-shadow: none;
   }
 }
 .header img {
@@ -610,6 +612,12 @@ main img {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+@media screen and (min-width: 1024px) {
+  .menu__card:hover p,
+  .menu__card:hover h3 {
+    max-width: 500px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .menu__card {
