@@ -187,7 +187,7 @@ footer img {
   footer img {
     float: right;
     margin-top: 64px;
-    margin-right: 50px;
+    margin-right: 70px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -196,7 +196,8 @@ footer img {
     flex-direction: row;
     padding-top: 64px;
     margin-top: 0;
-    margin-left: 350px;
+    float: right;
+    margin-right: 60px;
   }
 }
 footer ul a {
@@ -604,16 +605,10 @@ main img {
 }
 .menu__card p,
 .menu__card h3 {
-  max-width: 290px;
+  margin-right: 5px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-@media screen and (min-width: 1024px) {
-  .menu__card p,
-  .menu__card h3 {
-    max-width: 500px;
-  }
 }
 .menu__card:hover .box {
   opacity: 1;
@@ -625,7 +620,7 @@ main img {
 }
 .menu__card:hover p,
 .menu__card:hover h3 {
-  max-width: 200px;
+  margin-right: 5px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

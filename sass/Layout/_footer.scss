@@ -13,7 +13,7 @@ footer {
         @include desktop {
             float: right;
             margin-top: 64px;
-            margin-right: 50px;
+            margin-right: 70px;
         }
     }
 
@@ -23,7 +23,8 @@ footer {
             flex-direction: row;
             padding-top: 64px;
             margin-top: 0;
-            margin-left: 350px;
+            float: right;
+            margin-right: 60px;
 
         }
 
