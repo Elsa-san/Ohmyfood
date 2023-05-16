@@ -146,7 +146,7 @@ figure {
 }
 @media screen and (min-width: 1024px) {
   .heart__icon {
-    margin: 0 15px 0 0;
+    margin: 0 13px 0 0;
   }
 }
 .heart__icon--empty {
