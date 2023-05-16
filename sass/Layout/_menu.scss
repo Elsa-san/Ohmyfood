@@ -136,7 +136,7 @@ main img {
     position: absolute;
     transform-origin: 100% 50%;
     transform: scaleX(0);
-    transition-duration: 0.5s;
+    transition-duration: 0.4s;
 
     & .icon-circle {
         color: #fff;
@@ -172,7 +172,6 @@ main img {
         .box {
             opacity: 1;
             transform: scaleX(1);
-            transition: transform 0.3s;
         }
 
         .subtitle__line {
