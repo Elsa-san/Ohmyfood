@@ -58,14 +58,6 @@ figure {
     opacity: 1;
   }
 }
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes rotate {
   from {
     -webkit-transform: rotate(0deg);
@@ -156,15 +148,15 @@ figure {
   position: absolute;
   opacity: 0;
   background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-weight: bold;
   cursor: pointer;
+  transition-duration: 0.3s;
 }
 .heart__icon:hover .heart__icon--fill {
   opacity: 1;
-  animation: fill 0.5s ease-in-out;
+  animation: fill 0.3s ease-in-out;
 }
 .heart__icon:hover .heart__icon--empty {
   opacity: 0;
@@ -585,7 +577,7 @@ main img {
   position: absolute;
   transform-origin: 100% 50%;
   transform: scaleX(0);
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
 }
 .box .icon-circle {
   color: #fff;
